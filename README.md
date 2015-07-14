@@ -2,7 +2,8 @@
 
 My Taranis -plus Lua Scripts that I use on my R/C models.
 
-## Blackout Super Mini H
+## Model Setup
+### Blackout Super Mini H
 | Comp. | Description |
 |--------|----------|
 | Flightcontroller | Naze32 Acro |
@@ -13,14 +14,14 @@ My Taranis -plus Lua Scripts that I use on my R/C models.
 | Camera | Sony CCD 600TVL |
 | Other | TBS Core (for 12v) and OSD |
 
-### Switches
+#### Switches
 | Switch | Function |
 |--------|----------|
 | SD | Disarmed / Armed / Beeper |
 | SE | Angle / Horizon / Acro Modes |
 
 
-## ZMR250
+### ZMR250
 | Comp. | Description |
 |--------|----------|
 | Flightcontroller | Naze32 Full |
@@ -31,9 +32,19 @@ My Taranis -plus Lua Scripts that I use on my R/C models.
 | Camera | Sony CCD 600TVL |
 | Other |  | 
 
-### Switches
+#### Switches
 | Switch | Function |
 |--------|----------|
 | SD | Disarmed / Armed / Beeper |
 | SE | Angle / Horizon / Acro Modes |
 | SF | Mag / Baro - On/Off |
+
+
+## Links
+| Site | Description |
+|--------|----------|
+http://www.rcgroups.com | Has a fair amount of discussion on Lua scripting.
+http://www.rcgroups.com/forums/showthread.php?t=2180477 | The Lua Scripting thread on RCGroups.
+https://github.com/opentx/opentx/wiki/Lua-scripting-in-OpenTX | The official Lua script docs for OpenTX.
+http://en.wikipedia.org/wiki/Lua_%28programming_language%29 | The Wikipedia entry on Lua programming
+http://www.lua.org/ | The official Lua website.
