@@ -26,6 +26,7 @@ My Taranis -plus Lua Scripts that I use on my R/C models.
 
 ### ZMR250
 ![Telemetry1](/examples/zmr250-telemetry.png)
+
 (there is a small difference in script, ZMR250 has magnotometer and a barometer but it cant be seen here)
 
 #### Current Setup
