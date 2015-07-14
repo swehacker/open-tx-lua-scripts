@@ -84,15 +84,14 @@ local function run(event)
     -- ###############################################################
 
     local timer = model.getTimer(0)
-    lcd.drawText(98, 45, "Timer:", SMLSIZE, 0)
-    lcd.drawTimer(133, 41, timer.value, MIDSIZE)
+    lcd.drawText(98, 40, "Timer:", SMLSIZE, 0)
+    lcd.drawTimer(133, 36, timer.value, MIDSIZE)
 
     -- ###############################################################
-    -- Uhr
+    -- Clock
     -- ###############################################################
 
-    lcd.drawText(38, 3, "Uhr:", SMLSIZE, 0)
-    lcd.drawTimer(38, 12, getValue(190), LEFT + MIDSIZE)
+    lcd.drawTimer(38, 3, getValue(190), LEFT + MIDSIZE)
 
     -- ###############################################################
     -- Throttle in %
@@ -103,28 +102,28 @@ local function run(event)
         return math.floor(num * mult + 0.5) / mult
     end
 
-    lcd.drawText(98, 31, "THR %: ", SMLSIZE, 0)
-    lcd.drawText(133, 27, round((getValue(MIXSRC_Thr) / 10.24) / 2 + 50, 0), MIDSIZE, 0)
+    lcd.drawText(98, 26, "THR %: ", SMLSIZE, 0)
+    lcd.drawText(133, 22, round((getValue(MIXSRC_Thr) / 10.24) / 2 + 50, 0), MIDSIZE, 0)
 
     -- ###############################################################
     -- Flightmode image
     -- ###############################################################
 
-    lcd.drawPixmap(77, 1, "/SCRIPTS/BMP/fm.bmp")
+    lcd.drawPixmap(83, 1, "/SCRIPTS/BMP/fm.bmp")
 
     -- ###############################################################
     -- Flightcontrol	DISARMED/ARMED/BEEPER				switch SD
     -- ###############################################################
 
     if getValue(MIXSRC_SD) < 0 then -- switch SF
-    lcd.drawText(38, 31, "FC DISARMED", SMLSIZE)
-    lcd.drawText(38, 45, "BEEPER OFF", SMLSIZE)
+    lcd.drawText(38, 26, "FC DISARMED", SMLSIZE)
+    lcd.drawText(38, 40, "BEEPER OFF", SMLSIZE)
     elseif getValue(MIXSRC_SD) == 0 then
-        lcd.drawText(38, 31, "FC ARMED", SMLSIZE)
-        lcd.drawText(38, 45, "BEEPER OFF", SMLSIZE)
+        lcd.drawText(38, 26, "FC ARMED", SMLSIZE)
+        lcd.drawText(38, 40, "BEEPER OFF", SMLSIZE)
     else
-        lcd.drawText(38, 31, "FC DISARMED", SMLSIZE)
-        lcd.drawText(38, 45, "BEEPER ON", SMLSIZE)
+        lcd.drawText(38, 26, "FC DISARMED", SMLSIZE)
+        lcd.drawText(38, 40, "BEEPER ON", SMLSIZE)
     end
 
     -- ###############################################################
@@ -132,11 +131,11 @@ local function run(event)
     -- ###############################################################
 
     if getValue(MIXSRC_SE) < 0 then
-        lcd.drawText(98, 1, "Angle", MIDSIZE)
+        lcd.drawText(98, 3, "Angle", MIDSIZE)
     elseif getValue(MIXSRC_SE) == 0 then
-        lcd.drawText(98, 1, "Horizon", MIDSIZE)
+        lcd.drawText(98, 3, "Horizon", MIDSIZE)
     else
-        lcd.drawText(98, 1, "Acro", MIDSIZE)
+        lcd.drawText(98, 3, "Acro", MIDSIZE)
     end
 
     -- ###############################################################
