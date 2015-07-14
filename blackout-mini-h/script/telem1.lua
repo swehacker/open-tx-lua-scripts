@@ -109,7 +109,7 @@ local function run(event)
     -- Flightmode image
     -- ###############################################################
 
-    lcd.drawPixmap(83, 1, "/SCRIPTS/BMP/fm.bmp")
+    lcd.drawPixmap(82, 1, "/SCRIPTS/BMP/fm.bmp")
 
     -- ###############################################################
     -- Flightcontrol	DISARMED/ARMED/BEEPER				switch SD
