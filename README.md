@@ -4,7 +4,7 @@ My Taranis -plus Lua Scripts that I use on my R/C models.
 
 ## Model Setup
 ### Blackout Super Mini H
-![Telemetry1](/examples/blackout_telemetry1.png)
+![Telemetry1](/examples/blackout-telemetry1.png)
 
 #### Current Setup
 | Comp. | Description |
